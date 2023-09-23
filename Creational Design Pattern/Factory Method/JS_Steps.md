@@ -18,14 +18,14 @@ class Vehicle {
 ```js
 class Car extends Vehicle {
   constructor(make, model) {
-    super(make, model);
+    super(make, model); // Call the constructor of the base class
     this.type = "Car";
   }
 }
 
 class Motorcycle extends Vehicle {
   constructor(make, model) {
-    super(make, model);
+    super(make, model); // Call the constructor of the base class
     this.type = "Motorcycle";
   }
 }
