@@ -32,7 +32,6 @@ class VehicleFactory {
   constructor() {
     console.log("Creator class constructor run!");
   }
-
   createVehicle() {
     throw new Error("Subclasses must implement the createVehicle method.");
   }
@@ -53,18 +52,18 @@ class MotorcycleFactory extends VehicleFactory {
 // Example usage:
 const carFactory = new CarFactory();
 const car = carFactory.createVehicle("Toyota", "Camry");
-console.log(car.displayInfo());
+console.log(typeof car);
 
-const motorcycleFactory = new MotorcycleFactory();
-const motorcycle = motorcycleFactory.createVehicle("Honda", "CBR");
-console.log(motorcycle.displayInfo());
+// const motorcycleFactory = new MotorcycleFactory();
+// const motorcycle = motorcycleFactory.createVehicle("Honda", "CBR");
+// console.log(motorcycle.displayInfo());
 
-try{
-  const carFactory = new CarFactory();
-const car = carFactory.createVehicle("Toyota", "Camry");
-console.log(car.displayInfo());
-}
-catch(e){
-  console.log(e)
-}
+// try{
+//   const carFactory = new CarFactory();
+// const car = carFactory.createVehicle("Toyota", "Camry");
+// console.log(car.displayInfo());
+// }
+// catch(e){
+//   console.log(e)
+// }
 
